@@ -23,6 +23,12 @@ sources:
             description: payment method used by customer
             data_tests:
               - not_null
+              - accepted_values:
+                  values:
+                    - credit_card
+                    - bank_transfer
+                    - coupon
+                    - gift_card
           - name: status
             description: payment status
             data_tests:
